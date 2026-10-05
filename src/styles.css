@@ -1,4 +1,4 @@
-/* ===== Գյուղը կդիմանա՞ — стили ===== */
+/* ===== Գյուղը կդիմանա՞ — стили (v2) ===== */
 
 :root {
   --ink: #2d2a26;
@@ -11,6 +11,8 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+
+.probe-unused { color: #123456; }
 
 html, body { height: 100%; }
 
