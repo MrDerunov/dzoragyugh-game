@@ -1,4 +1,4 @@
-/* ===== Գյուղը կդիմանա՞ — стили (v2) ===== */
+/* ===== Գյուղը կդիմանա՞ — стили ===== */
 
 :root {
   --ink: #2d2a26;
@@ -11,8 +11,6 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
-.probe-unused { color: #123456; }
 
 html, body { height: 100%; }
 
@@ -123,6 +121,11 @@ body {
   box-shadow: 0 5px 0 var(--ink);
 }
 .btn-primary:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--ink); }
+
+button:focus-visible, input:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .btn-secondary {
   font-size: 1rem;
