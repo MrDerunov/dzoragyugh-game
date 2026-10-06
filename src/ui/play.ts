@@ -48,7 +48,7 @@ export function startGame(opts: { name: string; lb: LeaderboardService; onFinish
   const app = appRoot();
   clear(app);
 
-  const screen = el('div', { class: 'screen-play' });
+  const screen = el('div', { class: 'screen screen-play' });
 
   const timerFill = el('div', { class: 'timer-fill' });
   const timer = el('div', { class: 'timer' }, [timerFill]);
