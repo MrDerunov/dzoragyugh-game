@@ -139,7 +139,22 @@ button:focus-visible, input:focus-visible {
 .btn-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
 
 /* ===== HUD ===== */
-.screen-play { padding: 0; flex-direction: column; }
+/*
+ * Игровой экран — самодостаточная раскладка (не наследует центрирование
+ * базового .screen): HUD растянут на всю ширину, поле занимает весь остаток.
+ * Без stretch поле схлопывается в узкую полосу и объекты не видны.
+ */
+.screen-play {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+}
 
 .hud {
   position: relative;
